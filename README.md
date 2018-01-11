@@ -10,3 +10,6 @@ Content :
 VaccineStudy.pdf : which is the current version of the study presentation.
 src folder : containing the code used to generate the displays shown in the study.
 data folder : containing the raw data used in the study.
+
+
+All data used in this study is provided by the WHO.
