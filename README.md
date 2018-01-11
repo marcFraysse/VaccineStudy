@@ -7,9 +7,10 @@ We start here by showing that simply showing a decrease in diseases accompanying
 
 
 Content : 
-VaccineStudy.pdf : which is the current version of the study presentation.
-src folder : containing the code used to generate the displays shown in the study.
-data folder : containing the raw data used in the study.
+VaccineStudy.pdf : The current version of the study presentation. 
+src folder : The code used to generate the displays shown in the study.
+data folder : The raw data used in the study.
+displays folder : The displays shown in the study
 
 
 All data used in this study is provided by the WHO.
