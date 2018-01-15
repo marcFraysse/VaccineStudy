@@ -8,15 +8,17 @@ completeVaccineCoverage = xlsread('../data/DTP1coverage.xls');
 angolaTetanosCases = completeTetanosCases(4,:);
 angolaVaccineCoverage = completeVaccineCoverage(4,:);
 %display
-%plot(2016:-1:2000,angolaTetanosCases,'-.or');
-%plot(2016:-1:2000,angolaVaccineCoverage,'-.or');
-%plot(angolaVaccineCoverage,angolaTetanosCases,'or');
+
+%plot(2016:-1:2000,angolaTetanosCases,'-.sr','LineWidth',2);
+%plot(2016:-1:2000,angolaVaccineCoverage,'-.sr','LineWidth',2);
+%plot(angolaVaccineCoverage,angolaTetanosCases,'sr','LineWidth',8);
+
 
 %%30 country group study
 % figure(1);
 % for i = 1:30
 %    hold on;
-%    plot(completeVaccineCoverage(i,:),completeTetanosCases(i,:),'or');
+%    plot(completeVaccineCoverage(i,:),completeTetanosCases(i,:),'sr','LineWidth',3);
 % end
 
 %%Only diseased countries study
@@ -24,7 +26,7 @@ figure(1);
 for i = 1:30
    for j = 1:17
        if completeTetanosCases(i,j)>100
-           plot(completeVaccineCoverage(i,:),completeTetanosCases(i,:),'or');
+           plot(completeVaccineCoverage(i,:),completeTetanosCases(i,:),'sr','LineWidth',3);
            hold on;
        end
    end
