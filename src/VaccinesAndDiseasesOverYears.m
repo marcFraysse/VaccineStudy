@@ -9,8 +9,10 @@ angolaTetanosCases = completeTetanosCases(4,:);
 angolaVaccineCoverage = completeVaccineCoverage(4,:);
 %display
 
-%plot(2016:-1:2000,angolaTetanosCases,'-.sr','LineWidth',2);
-%plot(2016:-1:2000,angolaVaccineCoverage,'-.sr','LineWidth',2);
+% plot(2016:-1:2000,angolaTetanosCases,'-.sr','LineWidth',2);
+% plot(2016:-1:2000,angolaVaccineCoverage,'-.sb','LineWidth',2);
+
+plotyy(2016:-1:2000,angolaTetanosCases,2016:-1:2000,angolaVaccineCoverage);
 %plot(angolaVaccineCoverage,angolaTetanosCases,'sr','LineWidth',8);
 
 
@@ -33,17 +35,17 @@ angolaVaccineCoverage = completeVaccineCoverage(4,:);
 % end
 % 
 %%Only diseased unvaccinated countries study
-figure(1);
-for i = 1:30
-   for j = 1:17
-       if completeTetanosCases(i,j)>100 
-           if completeVaccineCoverage(i,17) < 95
-               plot(completeVaccineCoverage(i,:),completeTetanosCases(i,:),'sr','LineWidth',3);
-               hold on;
-           end
-       end
-   end
-end
+% figure(1);
+% for i = 1:30
+%    for j = 1:17
+%        if completeTetanosCases(i,j)>100 
+%            if completeVaccineCoverage(i,17) < 95
+%                plot(completeVaccineCoverage(i,:),completeTetanosCases(i,:),'sr','LineWidth',3);
+%                hold on;
+%            end
+%        end
+%    end
+% end
 
 %%Only unvaccianted countries study
 % figure(1);
